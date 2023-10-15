@@ -172,6 +172,8 @@ encoded_file encode( array_char* string ){
 
 }
 
+// This function grossly misinterprets the typical meaning of the size and capacity fields in an array_char.
+// In this case, size refers to the code length, while capacity refers to the allocated char array in which bit-encoded paths are stored.
 array_char* decode( encoded_file f ){
 
     array_char* out = construct_array(char, 1);
