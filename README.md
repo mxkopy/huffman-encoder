@@ -31,7 +31,8 @@ cd outputs && \
 base64 /dev/urandom | head -c 10000000 > file.txt && \
 ../encode file.txt encoded_file && \
 ../decode encoded_file decoded_file.txt && \
-ls -s
+ls -s && \
+cd ..
 ```
 
 The size of `encoded_file` should always be smaller than `file.txt`, and `file.txt` should always be exactly equal to `decoded_file.txt`.
