@@ -25,11 +25,12 @@ To decode the file, do
 If you're running Linux, you can run the following commands to test the program:
 
 ```
-make
-mkdir outputs && cd outputs
-base64 /dev/urandom | head -c 10000000 > file.txt
-../encode file.txt encoded_file
-../decode encoded_file decoded_file.txt
+make && \
+mkdir outputs && \ 
+cd outputs && \
+base64 /dev/urandom | head -c 10000000 > file.txt && \
+../encode file.txt encoded_file && \
+../decode encoded_file decoded_file.txt && \
 ls -s
 ```
 
