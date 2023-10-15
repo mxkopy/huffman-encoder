@@ -26,7 +26,7 @@ If you're running Linux, you can run the following commands to test the program:
 
 ```
 make && \
-mkdir outputs && \ 
+mkdir outputs && \
 cd outputs && \
 base64 /dev/urandom | head -c 10000000 > file.txt && \
 ../encode file.txt encoded_file && \
