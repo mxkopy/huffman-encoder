@@ -21,7 +21,7 @@ array_float* frequencies( array_char* string ){
 }
 
 
-// Creates an array of Huffman nodes, where each node contains a character and the frequency at which that character occurs in a string.
+// Creates an array of Huffman nodes, where each node contains a character and the frequency that character occurs in a string.
 // Characters with a frequency of 0 are skipped. 
 // L and R pointers are initialized to NULL. 
 array_hfnode* create_nodes( array_char* string ){
